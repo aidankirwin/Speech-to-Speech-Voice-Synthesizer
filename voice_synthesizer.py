@@ -119,6 +119,7 @@ class Chunk:
 root = tk.Tk()
 root.withdraw()
 file_path = filedialog.askopenfilename()
+root.update()
 
 rate, data = wavfile.read(file_path)
 data = data.astype(float)
